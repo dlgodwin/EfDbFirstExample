@@ -1,10 +1,9 @@
-﻿using System;
+﻿using DbTest.DAL.Model;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace DbTest.Model
+namespace DbTest.DAL.Contexts
 {
     public partial class BikeStoresContext : DbContext
     {

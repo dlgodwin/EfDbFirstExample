@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using DbTest.Model;
+using DbTest.DAL.Contexts;
 
 namespace DbTest
 {
@@ -27,3 +27,4 @@ namespace DbTest
         }
     }
 }
+ 

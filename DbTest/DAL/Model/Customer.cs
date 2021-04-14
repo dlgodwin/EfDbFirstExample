@@ -3,19 +3,18 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace DbTest.Model
+namespace DbTest.DAL.Model
 {
-    public partial class Store
+    public partial class Customer
     {
-        public Store()
+        public Customer()
         {
             Orders = new HashSet<Order>();
-            Stocks = new HashSet<Stock>();
-            staff = new HashSet<Staff>();
         }
 
-        public int StoreId { get; set; }
-        public string StoreName { get; set; }
+        public int CustomerId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Street { get; set; }
@@ -24,7 +23,5 @@ namespace DbTest.Model
         public string ZipCode { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
-        public virtual ICollection<Stock> Stocks { get; set; }
-        public virtual ICollection<Staff> staff { get; set; }
     }
 }
