@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using DbTest.DAL.Contexts;
+using EfDbFirstExample.Domain.Contexts;
 
 namespace DbTest
 {

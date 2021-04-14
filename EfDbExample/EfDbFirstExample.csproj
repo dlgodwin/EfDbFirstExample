@@ -6,16 +6,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DAL\" />
-    <Folder Include="DAL\Contexts\" />
-    <Folder Include="DAL\Model\" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DAL\Contexts\BikeStoresContext.cs" />
+    <Compile Remove="DAL\Model\Feedback.cs" />
+    <Compile Remove="DAL\Model\Order.cs" />
+    <Compile Remove="DAL\Model\Member.cs" />
+    <Compile Remove="DAL\Model\Stock.cs" />
+    <Compile Remove="DAL\Model\Store.cs" />
+    <Compile Remove="DAL\Model\Staff.cs" />
+    <Compile Remove="DAL\Model\Customer.cs" />
+    <Compile Remove="DAL\Model\OrderItem.cs" />
+    <Compile Remove="DAL\Model\Candidate.cs" />
+    <Compile Remove="DAL\Model\Brand.cs" />
+    <Compile Remove="DAL\Model\Project.cs" />
+    <Compile Remove="DAL\Model\Category.cs" />
+    <Compile Remove="DAL\Model\SalesSummary.cs" />
+    <Compile Remove="DAL\Model\Employee.cs" />
+    <Compile Remove="DAL\Model\Product.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EfDbFirstExample.Domain\EfDbFirstExample.Domain.csproj" />
   </ItemGroup>
 </Project>

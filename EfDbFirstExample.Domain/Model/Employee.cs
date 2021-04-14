@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace DbTest.DAL.Model
+namespace EfDbFirstExample.Domain.Model
 {
     public partial class Employee
     {

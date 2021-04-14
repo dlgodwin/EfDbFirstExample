@@ -1,9 +1,9 @@
-﻿using DbTest.DAL.Model;
+﻿using EfDbFirstExample.Domain.Model;
 using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
-namespace DbTest.DAL.Contexts
+namespace EfDbFirstExample.Domain.Contexts
 {
     public partial class BikeStoresContext : DbContext
     {
